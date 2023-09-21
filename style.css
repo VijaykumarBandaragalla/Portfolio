@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,100&display=swap');
+
+
+*{
+font-family: 'Texturina', serif;
+margin: 0px;
+box-sizing: border-box;
+}
+
+:root{
+    --primarycolor: rgb(199,237,95);
+    --secondarycolor:rgb(35,35,35);
+}
+
+.container{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    height: 600px;
+    
+}
+
+
+.section{
+    width: 700px;
+}
+.third{
+    width: 1200px;
+}
+
+.topimg{
+    height: 300px;
+    margin-top:232px;
+    float: left;
+    margin-left: 20px;
+}
+
+.info{
+    float: right;
+margin: 280px 20px 0px 0px;
+}
+
+.info h1{
+    font-size: 45px;
+}
+
+.info .subtitle{
+    font-size: 22px;
+    line-height: 25px;
+}
+
+.circle{
+    background-color: var(--primarycolor);
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-top: 250px;
+    position: absolute;
+    z-index: -1;
+}
+
+.skills-container{
+    height: 300px;
+    background-color: var(--secondarycolor);
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.skills{
+    width: 70%;
+    margin-left: 15%;
+    height: 300px;
+}
+
+.skills .box{
+    margin: 80px 5px 0px 5px;
+    float: left;
+    width: 24%;
+    background-color: rgba(255, 255, 255, 0.37);
+    height: 60px;
+    border-radius: 4rem;
+}
+
+.skills .box p{
+    padding-top: 15px;
+}
+
+
+.skills .box:before{
+    content: "";
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        bottom: 0;
+        height: 60px;
+        border-radius: 4rem;
+        left: 100%;
+        background-color: var(--primarycolor);    
+        transition-property: left;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+  }
+
+
+  .skills .one:hover:before{
+    left: 1%;
+  }
+  .skills .two:hover:before{
+    left: 20%;
+  }
+  
+  .skills .three:hover:before{
+    left: 20%;
+  }
+  
+  .skills .four:hover:before{
+    left: 10%;
+  }
+  
+.portfolio{
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    height: 450px;
+}
+
+.portfolio h1{
+    color: var(--secondarycolor);
+    padding-top:80px;
+}
+
+.portfolio .block{
+    margin-top: 25px;
+    width: 32%;
+    float: left;
+    margin-left: 12px;
+    height: 300px;
+    color: white;
+    background-color: var(--secondarycolor);
+}
+
+.portfolio .block .box{
+    width: 100%;
+    height: 225px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .block img{
+ text-align: center;
+ justify-content: center;
+ width: 400px;
+ height: auto;
+}
+
+.portfolio h2{
+    padding-top: 15px;
+}
+
+.portfolio .block img:hover{
+   transform: scale(1.2);
+   transition-duration: 1s;
+   }
+
+.last{
+    background-color: var(--secondarycolor);
+    height: 550px;
+}
+   .contact{
+       padding:30px 100px;
+       text-align: center;
+       height: 500px;
+     
+       color: white;
+   }
+
+   .contact h1, p{
+       text-align: center;
+   }
+
+   input[type=text], textarea{
+       width: 100%;
+       padding: 12px;
+       border: 1px solid white;
+       border-radius: 4px;
+       box-sizing: border-box;
+       margin-top: 6px;
+       margin-bottom: 16px;
+       background-color: transparent;
+       color: white;
+   }
+
+
+
+ input[type=submit]{
+     text-align: center;
+       padding: 12px 20px;
+       border: 1px solid white;
+       border-radius: 4px;
+       box-sizing: border-box;
+       cursor: pointer;
+color: white;
+       background-color: transparent;
+   }
+
+   .contact i{
+    margin: 10px;
+    cursor: pointer;   
+   }
+
+   
+ #popupBoxOnePosition,
+ #popupBoxTwoPosition,
+ #popupBoxThreePosition {
+   top: 0;
+   left: 0;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background-color: var(--secondarycolor);
+   display: none;
+   z-index: +3;
+ }
+
+ .popupBoxWrapper {
+   width: 100%;
+   text-align: center;
+ }
+
+ .popupBoxContent {
+  justify-content: center;
+  text-align: center;
+ }
+
+ .popupBoxContent h1{
+   color: white;
+   margin-bottom: 200px;
+ }
+
+ #closebox1,
+ #closebox2,
+ #closebox3,
+ #closebox4,
+ #closebox5,
+ #closebox6 {
+   margin-left: 97%;
+   position: absolute;
+   cursor: pointer;
+   color: white;
+ }
+
+.popupBoxContent img{
+  float: center;
+ height: 200px;
+ margin: 20px;
+}
+
+ 
+
